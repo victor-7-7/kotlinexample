@@ -1,46 +1,37 @@
-# Built application files
-/*/build/
-
-# Crashlytics configuations
-com_crashlytics_export_strings.xml
-
-# Local configuration file (sdk path, etc)
-local.properties
-app/proguard-rules.pro
-
-# Gradle generated files
-.gradle/
-build/
-gradle/
-gradlew
-# gradle.properties
-gradlew.bat
-
-app/libs
-app/src/test/
-app/src/androidTest/
-
-# Signing files
-.signing/
-
-# User-specific configurations
-.idea/
 *.iml
-
-# OS-specific files
+.gradle
+/local.properties
+.idea/
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
+/build
+/captures
+.externalNativeBuild
+.cxx
+
+/gradle
+/build.gradle
+/gradle.properties
+/gradlew
+/gradlew.bat
+/settings.gradle
+/app/build
+/app/libs/
+/app/build.gradle
+/app/src/androidTest
+/app/src/main/res
+/app/src/main/AndroidManifest.xml
+
+/app/src/test/
 
 #temp file
 notes.txt
 snippets.txt
 Playground.kt
 
-#Capture files generated when running the Layout Inspector or the Method Tracing
-captures/
 
