@@ -1,12 +1,13 @@
 package ru.skillbranch.kotlinexample
 
+import android.annotation.SuppressLint
 import androidx.annotation.VisibleForTesting
 import java.math.BigInteger
 import java.security.MessageDigest
 import java.security.SecureRandom
 import java.util.*
 
-@ExperimentalStdlibApi
+
 class User private constructor(
     private val firstName: String,
     private val lastName: String?,
@@ -17,9 +18,10 @@ class User private constructor(
     val userInfo: String
 
     private val fullName: String
+        @SuppressLint("DefaultLocale")
         get() = listOfNotNull(firstName, lastName)
             .joinToString(" ")
-            .capitalize(Locale.getDefault())
+            .capitalize()
 
     private val initials: String
         get() = listOfNotNull(firstName, lastName)

@@ -3,7 +3,6 @@ package ru.skillbranch.kotlinexample
 import androidx.annotation.VisibleForTesting
 import java.util.*
 
-@ExperimentalStdlibApi
 object UserHolder {
 
     private val map = mutableMapOf<String, User>()
